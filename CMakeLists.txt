@@ -17,4 +17,6 @@ add_executable(Proyecto2 main.cpp
         RepAnalsis3.h
         RepAnalsis3.cpp
         ContEnfermedades.cpp
-        ContPacientes.cpp)
+        ContPacientes.cpp
+        AplicacionADN.h
+        AplicacionADN.cpp)

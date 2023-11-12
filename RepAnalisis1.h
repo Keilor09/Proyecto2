@@ -5,9 +5,16 @@
 #ifndef PROYECTO2_REPANALISIS1_H
 #define PROYECTO2_REPANALISIS1_H
 
+#include "IReporte.h"
 
-class RepAnalisis1 {
+using namespace std;
 
+class RepAnalisis1 : public IReporte {
+public:
+    RepAnalisis1();
+    virtual ~RepAnalisis1();
+    void encabezado();
+    void analisis(Paciente*,  ContEnfermedades*);
 };
 
 
