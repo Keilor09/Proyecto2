@@ -40,14 +40,8 @@ void ContPacientes::recuperaPacientes(ifstream& arch1) {
         cout << "No se pudo abrir archivo" << endl;
     }
     else {
-        string registro, id, nombre, telefono, correo, secuencia;
+        string registro;
         while (getline(arch1, registro)) {
-            stringstream s(registro);
-            getline(s, id, ',');
-            getline(s, nombre, ',');
-            getline(s, telefono, ',');
-            getline(s, correo, ',');
-            getline(s, secuencia, ',');
             ingresaPaciente(ptrPaciente->recuperaPaciente(arch1));
         }
         arch1.close();
